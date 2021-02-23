@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>목록 표시 </title>
+	<!-- BootStrap 라이브러리 CDN 방식 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+/*일반 적인 태그 선택 : 태그이름, 클래스 선택 : .클래스 이름, 아이디 선택 : #아이디 이름 */
+#iconList{
+/*ul -list-style-type:disc,square,circle,none*/
+list-style-type: none;
+}
+
+#imgList{
+list-style-image: url("img/icon2.png");
+}
+
+</style>
+</head>
+<body>
+<h3>순서가 없는 목록 : 과목명</h3>
+<!--  ul tag 속성 (type): disc,square,circle  -->
+<ul type = "disc" >
+	<li>Oracle</li>
+	<li>JAVA</li>
+	<li>
+	Web
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JS</li>
+		
+	</ul>
+	</li>
+</ul>
+
+<ul id="iconList" >
+	<li><i class="glyphicon glyphicon-ok"></i>Oracle</li>
+	<li><i class="glyphicon glyphicon-ok"></i>JAVA</li>
+	<li><i class="glyphicon glyphicon-ok"></i>Web </li>
+	
+</ul>
+
+<ul id="imgList" >
+	<li>Oracle</li>
+	<li>JAVA</li>
+	<li>Web </li>
+	
+</ul>
+
+<h3>순서가 있는 목록 : JSP의 운영순서</h3>
+<ol>
+	<li>Oracle</li>
+	<li>JAVA</li>
+	<li>
+	Web
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JS</li>
+	</ul>
+	</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 실습</title>
+<style type="text/css">
+/* table : table 태그 선택. table,th:table,th tag 선택*/
+table{
+	width:300px;
+ /* 테이블 전체를 가운데 놓기*/
+	margin:0 auto;/*margin:위아래 마진 0 좌우마진 적당히 분배 auto*/
+}
+.name{
+/*글자 가운데 정렬 : 칸 안의 글자를  가운데 정렬 : 기본은 왼쪽 정렬*/
+	text-align: center;
+}
+
+
+th,td{
+	/*border-width: 1px; /*선의 두께*/
+	/*border-style: solid; /*선의 형태*/
+	/*border-color: black; /*선의 색*/
+/*위의 3가지 속성에 해당되는 값들이 구분되는 경우 한꺼번에 설정 -> 자동배정 */
+	border: 1px solid black; 
+	/*border-collapse: collapse; 테이블의 간격을 무너뜨림*/
+}
+th{
+	background: black;
+	color: white;
+}
+</style>
+</head>
+<body>
+<h4>테이블</h4>
+<table>
+<tr>
+	<th colspan="2">멤버 정보</th>
+</tr>
+<tr>
+	<td>RM</td>
+	<td class="name">김남준</td>
+</tr>
+<tr>
+	<td>진</td>
+	<td class="name">김석진</td>
+</tr>
+<tr>
+	<td>SUGAR</td>
+	<td>민윤기</td>
+</tr>
+<tr>
+	<td>J hope</td>
+	<td>정호석</td>
+</tr>
+<tr>
+	<td>지민</td>
+	<td>박지민</td>
+</tr>
+<tr>
+	<td>V</td>
+	<td>김태형</td>
+</tr>
+<tr>
+	<td>정국</td>
+	<td>전정국</td>
+</tr>
+</table>
+</body>
+</html>

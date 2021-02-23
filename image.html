@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!--style tag 안에 선언된 것이 Style Sheet -->
+<style type="text/css">
+.imageList{
+	width : 400px;
+	heigt : 400px;
+}
+</style>
+</head>
+<body>
+<h3>t 그대로 표시</h3>
+<!--  alt : 만약에 이미지가 표시되지 않는다면 나타나는 글자 
+src : 이미지 자원의 위치 
+내 서버의 위치 - 지정 않음.라이센스 내용 확인 -->
+<img alt ="눈오는 밤 이미지 1 "src="img/snow1.jpg">
+<!-- 네이버 방탄소년단 이미지 표시.라이센스 확인하지 않아도 됨 -->
+<img alt ="BTS "src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEwMjFfOTEg%2FMDAxNjAzMjgxMTQyOTA0.Ot2UbJxu1dAGAJxCLUGRD1Z40l9j-Ei_FGGbRO2DfQMg.ruRwMOKHWyCWpv9cHgelAx6MIBAs27PcCxboAAXkB80g.JPEG.toy22story%2F1603281138437.jpg&type=sc960_832">
+<!--내 서버의 위치 (절대위치 : 맨 상위 위치 '/ch02basic/' : WebContent)  -->
+<img alt ="눈오는 밤 이미지 2 "src="/ch02basic/img/snow2.jpg">
+<br/>
+<h3>width, height속성을 이용한 이미지 크기 지정</h3>
+<img alt ="눈오는 밤 이미지 1 "src="img/snow1.jpg" width="400px" height="400px">
+<img alt ="BTS "src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEwMjFfOTEg%2FMDAxNjAzMjgxMTQyOTA0.Ot2UbJxu1dAGAJxCLUGRD1Z40l9j-Ei_FGGbRO2DfQMg.ruRwMOKHWyCWpv9cHgelAx6MIBAs27PcCxboAAXkB80g.JPEG.toy22story%2F1603281138437.jpg&type=sc960_832" width="400px" height="400px">
+<img alt ="눈오는 밤 이미지 2 "src="/ch02basic/img/snow2.jpg" width="400px" height="400px">
+
+<h3>style(CSS)속성을 이용한 이미지 크기 지정</h3>
+<img alt ="눈오는 밤 이미지 1 "src="img/snow1.jpg" style ="width:400px; height:400px;">
+<img alt ="BTS "src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEwMjFfOTEg%2FMDAxNjAzMjgxMTQyOTA0.Ot2UbJxu1dAGAJxCLUGRD1Z40l9j-Ei_FGGbRO2DfQMg.ruRwMOKHWyCWpv9cHgelAx6MIBAs27PcCxboAAXkB80g.JPEG.toy22story%2F1603281138437.jpg&type=sc960_832" style ="width:400px; height:400px;">
+<img alt ="눈오는 밤 이미지 2 "src="/ch02basic/img/snow2.jpg" style ="width:400px; height:400px;">
+
+<h3>CSS속성을 이용한 이미지 크기 지정</h3>
+<p>
+class = class 이름 : 적용하려는 객체가 여러개일 때<br/>
+id = id이름 : 적용하려는 객체가 단 하나일 때 
+</p>
+<img alt ="눈오는 밤 이미지 1 "src="img/snow1.jpg"class = "imageList">
+<img alt ="BTS "src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEwMjFfOTEg%2FMDAxNjAzMjgxMTQyOTA0.Ot2UbJxu1dAGAJxCLUGRD1Z40l9j-Ei_FGGbRO2DfQMg.ruRwMOKHWyCWpv9cHgelAx6MIBAs27PcCxboAAXkB80g.JPEG.toy22story%2F1603281138437.jpg&type=sc960_832" class = "imageList">
+<img alt ="눈오는 밤 이미지 2 "src="/ch02basic/img/snow2.jpg" class = "imageList">
+</body>
+</html>
